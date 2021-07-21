@@ -20,18 +20,55 @@
       text-align: center;
     }
     .second {
-      text-align: right
+      text-align: center
     }
     .big {
       font-size: 2rem;
     }
     
     #about {
-      color: red;
-
+      color: rgb(247, 55, 205);
+      cursor: pointer;
+    }
+    /* The animation code */
+    @keyframes example {
+      0%   {
+        background-color:red; left:0px; top:0px;
+      }
+      25%  {
+        background-color:yellow; left:200px; top:0px;
+      }
+      50%  {
+        background-color:blue; left:200px; top:200px;
+      }
+      75%  {
+        background-color:green; left:0px; top:200px;
+      }
+      100% {
+        background-color:red; left:0px; top:0px;
+      }
+    }
+    .animate {
+      position: relative;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+    .px-500 {
+      width: 500px;
+      height: auto;
+    }
+    .third {
+      color: rgb(247, 55, 205);
+      text-align: center;
+    } 
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style> 
-  <img src="images/emiUsingComputer.jpg" alt="Boy Using Computer" width="500" height="333">
+  <img class="px-500" src="images/emiUsingComputer.jpg" alt="Boy Using Computer" width="500" height="333">
 
 </head>
 <body>
@@ -71,7 +108,7 @@
   <ul></ul>
 </section>
 <section>
-  <h1>Connect</h1>
+  <h1 class="third big" id="connect">Connect</h1>
   <li>dianasaavedra2315@gmail.com</li>
   <li>https://github.com/dianafuentes</li>
 </section>
