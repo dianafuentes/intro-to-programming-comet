@@ -5,23 +5,44 @@
   <meta name="description" content="Resume" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {background-color: rgb(203, 184, 235);}
-    h1 {color: rgb(146, 36, 174);}
+    body {
+      font-size: 16px;
+      background-color: rgb(203, 184, 235);
+    }
+    h1 {
+      color: rgb(146, 36, 174);
+    }
+    .normal {
+      font-weight: normal;
+    }
     p {color: rgb(0, 0, 0);}
+    .first {
+      text-align: center;
+    }
+    .second {
+      text-align: right
+    }
+    .big {
+      font-size: 2rem;
+    }
+    
+    #about {
+      color: red;
+
+    }
   </style> 
-  <img src="emiUsingComputer.jpg" alt="Boy Using Computer" width="500" height="333">
+  <img src="images/emiUsingComputer.jpg" alt="Boy Using Computer" width="500" height="333">
 
 </head>
 <body>
-      
   <h1>Diana Fuentes</h1> 
 <section>
-  <h1>About</h1>
+  <h1 class="first big normal" id="about">About</h1>
   <p> I am a mom and wife that is trying to make a name for her self, who has asperations to pave the way for not only my son but other individuals. Both of my parents are undocumented and I have grown up in a society that has undervalued us, and this often foments a sense of low self esteem that is untrue yet weighs heavy at times. I would be lying if I said that everything since becoming a mom has been easy with unfinished goals due to change in priorities. I would often get discourage on begining my coding journey, I would often get inposter syndrom, I was stuck with a complex mindset. Within this past year of networking, I got inspired by other women/mothers like myself to be confident and be persistant. At the end of the day we are all learning and their to helping others. Coding has helped me tremendously to feel confident in who I am and in what I do. </p>
 </section>
 
 <section>
-  <h1>Experience </h1>
+  <h1 class="second big" id="experience">Experience </h1>
 
   <h3>Work</h3>
 
@@ -45,12 +66,20 @@
   <li>Python - Data Visualization(data analysis) and APIs</li>
   <li>Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.</li>
 </section>
-
+<section id="skills">
+  <h2>Skills</h2>
+  <ul></ul>
+</section>
 <section>
   <h1>Connect</h1>
   <li>dianasaavedra2315@gmail.com</li>
   <li>https://github.com/dianafuentes</li>
 </section>
+<footer>
+
+</footer>
+
+<script src="js/index.js"></script>
 
 </body>
 </html>
